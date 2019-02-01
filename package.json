@@ -1,6 +1,6 @@
 {
   "name": "tslint-fast-loader",
-  "version": "3.5.4",
+  "version": "1.0.0",
   "description": "tslint loader for webpack",
   "main": "index.js",
   "scripts": {
