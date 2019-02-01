@@ -149,7 +149,7 @@ module.exports = function(input, map) {
   if (!isHooked && options.typeCheck) {
     var webpackCompiler = webpackInstance._compiler;
     updateCachedProgram(options.tsConfigFile);
-    webpackCompiler && webpackCompiler.hooks && webpackCompiler.hooks.watchRun.tap('tslint-loader', function() {
+    webpackCompiler && webpackCompiler.hooks && webpackCompiler.hooks.watchRun.tap('tslint-fast-loader', function() {
       updateCachedProgram(options.tsConfigFile);
     });
     isHooked = true;

@@ -1,5 +1,5 @@
 {
-  "name": "tslint-loader",
+  "name": "tslint-fast-loader",
   "version": "3.5.4",
   "description": "tslint loader for webpack",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wbuchwalter/tslint-loader"
+    "url": "https://github.com/annoraaq/tslint-fast-loader"
   },
   "keywords": [
     "tslint",
@@ -20,12 +20,12 @@
     "loader",
     "linting"
   ],
-  "author": "William Buchwalter",
+  "author": "Johannes Baum",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wbuchwalter/tslint-loader/issues"
+    "url": "https://github.com/annoraaq/tslint-fast-loader/issues"
   },
-  "homepage": "https://github.com/wbuchwalter/tslint-loader",
+  "homepage": "https://github.com/annoraaq/tslint-fast-loader",
   "peerDependencies": {
     "tslint": ">=4.0.0"
   },
