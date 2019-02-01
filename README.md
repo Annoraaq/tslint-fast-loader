@@ -1,13 +1,14 @@
 # tslint-fast-loader
-Fast tslint loader for Webpack. This is a fork of tslint-loader but performs faster by an order of magnitude when typechecking is enabled.
+
+Fast tslint loader for Webpack. This is a fork of tslint-loader but performs faster by an order of magnitude when type checking is enabled.
 
 ## Installation
 
-``` shell
+```shell
 npm install tslint tslint-fast-loader --save-dev
 ```
 
-The package depends on Tslint 4.0+, no longer works with 3.* versions.
+The package depends on Tslint 4.0+, no longer works with 3.\* versions.
 
 ## Usage
 
@@ -21,17 +22,19 @@ module.exports = {
         rules: [
             {
                 test: /\.ts$/,
-                enforce: 'pre',
+                enforce: "pre",
                 use: [
                     {
-                        loader: 'tslint-fast-loader',
-                        options: { /* Loader options go here */ }
+                        loader: "tslint-fast-loader",
+                        options: {
+                            /* Loader options go here */
+                        }
                     }
                 ]
             }
         ]
     }
-}
+};
 ```
 
 ### Webpack 3
@@ -42,13 +45,15 @@ module.exports = {
         loaders: [
             {
                 test: /\.ts$/,
-                enforce: 'pre',
-                loader: 'tslint-fast-loader',
-                options: { /* Loader options go here */ }
+                enforce: "pre",
+                loader: "tslint-fast-loader",
+                options: {
+                    /* Loader options go here */
+                }
             }
         ]
     }
-}
+};
 ```
 
 ### Webpack 2
@@ -59,13 +64,15 @@ module.exports = {
         rules: [
             {
                 test: /\.ts$/,
-                enforce: 'pre',
-                loader: 'tslint-fast-loader',
-                options: { /* Loader options go here */ }
+                enforce: "pre",
+                loader: "tslint-fast-loader",
+                options: {
+                    /* Loader options go here */
+                }
             }
         ]
     }
-}
+};
 ```
 
 ### Webpack 1
@@ -76,13 +83,15 @@ module.exports = {
         preLoaders: [
             {
                 test: /\.ts$/,
-                loader: 'tslint-fast-loader'
+                loader: "tslint-fast-loader"
             }
         ]
     },
 
-    tslint: { /* Loader options go here */ }
-}
+    tslint: {
+        /* Loader options go here */
+    }
+};
 ```
 
 ### Loader options
@@ -151,5 +160,3 @@ module.exports = {
 ## License
 
 [MIT](http://www.opensource.org/licenses/mit-license.php)
-
-
